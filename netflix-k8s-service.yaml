@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: netflix-app
-  type: nodeport
+  type: NodePort
   ports:
   - protocol: TCP
     port: 5000
