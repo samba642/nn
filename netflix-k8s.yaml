@@ -19,6 +19,11 @@ spec:
           image: nagasatishdocker/netflix-app:latest
           ports:
             - containerPort: 3000
+           resources:
+            limits:
+              cpu: 500m
+            requests:
+               cpu: 100m  
             
   -----------------
   
