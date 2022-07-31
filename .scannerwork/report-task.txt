@@ -2,5 +2,5 @@ projectKey=netflix-app
 serverUrl=http://3.144.72.163:9090
 serverVersion=6.7.1.35068
 dashboardUrl=http://3.144.72.163:9090/dashboard/index/netflix-app
-ceTaskId=AYJUtL4Bo-z-CodmE0Bv
-ceTaskUrl=http://3.144.72.163:9090/api/ce/task?id=AYJUtL4Bo-z-CodmE0Bv
+ceTaskId=AYJU0azbo-z-CodmE0Bx
+ceTaskUrl=http://3.144.72.163:9090/api/ce/task?id=AYJU0azbo-z-CodmE0Bx
