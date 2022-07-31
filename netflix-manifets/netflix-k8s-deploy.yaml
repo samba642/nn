@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  metadata:
+  labels:
+    app.kubernetes.io/name: netflix
+    app.kubernetes.io/instance: netflix
+    app.kubernetes.io/version: '1.0.0'
+    app.kubernetes.io/managed-by: kubectl
+  name: netflix
+  namespace: live
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: netflix
+  template:
+    metadata:
+      labels:
+        app: netflix
+        role: rolling-update
+    spec:
+      containers:
+      - image: 462748563487.dkr.ecr.us-east-2.amazonaws.com/netflix-app:3
+        imagePullPolicy: Always
+        resources:
+          limits:
+            cpu: 500m
+            memory: 1Gi
+          requests:
+            cpu: 500m
+            memory: 500Mi
+             
+        name: netflix
+        ports:
+        - containerPort: 3000
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
