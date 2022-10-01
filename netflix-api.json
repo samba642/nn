@@ -8,7 +8,7 @@
     "item": [{
        "name": "A simple POST request",
       "request": {
-        "url": "https://netflix.indiaindarkera.in/browse",
+        "url": "https://netflix2.ciyent.shop/browse",
         "method": "POST",
         "header": [{
           "key": "Content-Type",
@@ -22,7 +22,7 @@
     }, {
       "name": "A simple POST request with JSON body",
       "request": {
-        "url": "https://netflix.indiaindarkera.in/signin",
+        "url": "https://netflix2.ciyent.shop/signin",
         "method": "POST",
         "header": [{
           "key": "Content-Type",
