@@ -21,8 +21,16 @@ spec:
         role: rolling-update
     spec:
       containers:
-      - image: 462748563487.dkr.ecr.us-east-2.amazonaws.com/netflix-app:21
+      - image: 497918183070.dkr.ecr.ap-south-1.amazonaws.com/samba-img:2
         imagePullPolicy: Always
+        resources:
+          limits:
+            cpu: 500m
+            memory: 1Gi
+          requests:
+            cpu: 500m
+            memory: 500Mi
+
         name: netflix
         ports:
         - containerPort: 3000
